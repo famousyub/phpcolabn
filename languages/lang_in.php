@@ -1,0 +1,382 @@
+<?php
+#Application name: PhpCollab
+#Status page: 2
+#Path by root: ../languages/lang_in.php
+
+//translator(s): Rachman Chavik <rachman@users.sourceforge.net>
+$byteUnits = array('Bytes', 'KB', 'MB', 'GB');
+
+
+$monthNameArray = array(
+    1 => "Januari",
+    "Februari",
+    "Maret",
+    "April",
+    "Mei",
+    "Juni",
+    "Juli",
+    "Agustus",
+    "September",
+    "Oktober",
+    "November",
+    "Desember"
+);
+
+$status = array(0 => "Selesai oleh Klien ", 1 => "Selesai", 2 => "Belum Dimulai", 3 => "Terbuka", 4 => "Non-aktif");
+
+
+$priority = array(
+    0 => "Tidak ada",
+    1 => "Tidak Penting Sekali",
+    2 => "Tidak Penting",
+    3 => "Sedang",
+    4 => "Penting",
+    5 => "Sangat Penting"
+);
+
+$statusTopic = array(0 => "Tertutup", 1 => "Terbuka");
+$statusTopicBis = array(0 => "Ya", 1 => "Tidak");
+
+$statusPublish = array(0 => "Ya", 1 => "Tidak");
+
+$statusFile = array(
+    0 => "Disetujui",
+    1 => "Disetujui dgn perubahan",
+    2 => "Butuh persetujuan",
+    3 => "Tidak perlu persetujuan",
+    4 => "Tidak disetujui"
+);
+
+
+
+$strings["please_login"] = "Harap log in";
+$strings["login"] = "Masuk";
+$strings["no_items"] = "Hasil query kosong";
+$strings["logout"] = "Keluar";
+$strings["preferences"] = "Konfigurasi";
+$strings["my_tasks"] = "TugasKu ";
+$strings["edit_task"] = "Ubah Tugas";
+$strings["copy_task"] = "Duplikat Tugas";
+$strings["add_task"] = "Penambahan Tugas";
+$strings["delete_tasks"] = "Penghapusan Tugas";
+$strings["assignment_history"] = "Sejarah Penugasan";
+$strings["assigned_on"] = "Ditugaskan Pada";
+$strings["assigned_by"] = "Ditugaskan Oleh";
+$strings["to"] = "Kepada";
+$strings["comment"] = "Komentar";
+$strings["task_assigned"] = "Penugasan kepada ";
+$strings["task_unassigned"] = "Tugas yang belum diserahkan";
+$strings["edit_multiple_tasks"] = "Ubah Tugas (Multiple)";
+$strings["tasks_selected"] = "Tugas telah dipilih.  Pilih informasi baru untuk tugas ini, ata pilih [Tidak Ada Perubahan] untuk menggunakan data yang terkini.";
+$strings["assignment_comment"] = "Komentar Penugasan";
+$strings["no_change"] = "[Tidak Ada Perubahan]";
+$strings["my_discussions"] = "DiskusiKu";
+$strings["discussions"] = "Diskusi";
+$strings["delete_discussions"] = "Hapus Diskusi";
+$strings["delete_discussions_note"] = "Note: Diskusi tidak bisa dibuka ulang sesudah dihapus.";
+$strings["topic"] = "Topik";
+$strings["latest_post"] = "Posts Terakhir";
+$strings["my_reports"] = "LaporanKu";
+$strings["reports"] = "Laporan";
+$strings["create_report"] = "Buat Laporan";
+$strings["report_intro"] = "Siapkan pilihan laporan dan simpan setelah menjalankan proses laporan.";
+$strings["admin_intro"] = "Konfigurasi Proyek.";
+$strings["copy_of"] = "Duplikat dari ";
+$strings["add"] = "Tambah";
+$strings["delete"] = "Hapus";
+$strings["remove"] = "Cabut";
+$strings["copy"] = "Duplikat";
+$strings["view"] = "Lihat";
+$strings["edit"] = "Ubah";
+$strings["details"] = "Detil";
+$strings["none"] = "Tidak Ada";
+$strings["close"] = "Tutup";
+$strings["new"] = "Baru";
+$strings["select_all"] = "Pilih Semua";
+$strings["unassigned"] = "Belum Diserahkan";
+$strings["my_projects"] = "ProyeKu";
+$strings["project"] = "Proyek";
+$strings["active"] = "Aktif";
+$strings["inactive"] = "Non-Aktif";
+$strings["project_id"] = "Proyek ID";
+$strings["edit_project"] = "Ubah Project";
+$strings["copy_project"] = "Duplikat Project";
+$strings["add_project"] = "Tambah Project";
+$strings["clients"] = "Klien";
+$strings["organization"] = "Organisasi Klien";
+$strings["client_projects"] = "Proyek Klien";
+$strings["client_users"] = "Pengguna dari Klien";
+$strings["edit_organization"] = "Ubah Organisasi Klien";
+$strings["add_organization"] = "Tambah Organisasi Klien";
+$strings["organizations"] = "Organisasi Klien";
+$strings["owner"] = "Pemilik";
+$strings["home"] = "Utama";
+$strings["projects"] = "Proyek";
+$strings["search"] = "Cari";
+$strings["user"] = "Pengguna";
+$strings["project_manager"] = "Manager Proyek";
+$strings["task"] = "Tugas";
+$strings["tasks"] = "Tugas-tugas";
+$strings["team"] = "Tim";
+$strings["add_team"] = "Tambah Anggota Tim";
+$strings["team_members"] = "Anggota Tim ";
+$strings["full_name"] = "Nama Lengkap";
+$strings["title"] = "Jabatan";
+$strings["user_name"] = "Name pengguna";
+$strings["work_phone"] = "Telepon Kantor";
+$strings["priority"] = "Prioritas";
+$strings["name"] = "Nama";
+$strings["description"] = "Gambaran";
+$strings["phone"] = "Telepon";
+$strings["address"] = "Alamat";
+$strings["comments"] = "Komentar";
+# RACHMAN: add new comments
+$strings["new_comments"] = "Komentar Baru";
+$strings["created"] = "Dibuat pada";
+$strings["assigned"] = "Diserahkan tanggal";
+$strings["modified"] = "Diubah";
+$strings["assigned_to"] = "Kepada";
+$strings["due_date"] = "Deadline";
+$strings["estimated_time"] = "Perkiraan Waktu Kerja";
+$strings["actual_time"] = "Waktu Kerja Akhir";
+$strings["delete_following"] = "Hapus yang berikut?";
+$strings["cancel"] = "Batal";
+$strings["and"] = "dan";
+$strings["administration"] = "Administrasi";
+$strings["user_management"] = "Manajemen Pengguna";
+$strings["system_information"] = "Informasi Sistem";
+$strings["product_information"] = "Informasi Produk";
+$strings["create"] = "Buat";
+$strings["report_save"] = "Simpan laporan ini untuk dijalankan di lain waktu";
+$strings["report_name"] = "Nama Laporan";
+$strings["save"] = "Simpan";
+$strings["matches"] = "Persamaan";
+$strings["match"] = "Persamaan";
+$strings["report_results"] = "Hasil laporan";
+$strings["success"] = "Sukses";
+$strings["addition_succeeded"] = "Penambahan sukses";
+$strings["deletion_succeeded"] = "Penghapusan sukses";
+$strings["report_created"] = "Laporan Dibuat";
+$strings["deleted_reports"] = "Laporan Dihapus";
+$strings["modification_succeeded"] = "Perubahan sukses";
+$strings["errors"] = "Ditemukan kesalahan!";
+$strings["blank_user"] = "Pengguna Tidak Dapat Ditemukan";
+$strings["blank_organization"] = "Organisasi Klien tidak dapat ditemukan";
+$strings["blank_project"] = "Proyek tidak ditemukan.";
+$strings["user_profile"] = "Profil Pengguna";
+$strings["change_password"] = "Ubah Kata Sandi";
+$strings["change_password_user"] = "Ganti Kata Sandi";
+$strings["old_password_error"] = "Kata sandi lama salah.  Harap masukkan kembali kata sandi yang lama.";
+$strings["new_password_error"] = "Kedua kata sandi yang baru berbeda. Harap masukkan kembali kata sandi anda.";
+$strings["notifications"] = "Notifikasi";
+$strings["change_password_intro"] = "Masukkan kata sandi anda, kemudian tambahkan dan konfirmasi kata sandi yang baru.";
+$strings["old_password"] = "Kata sandi lama";
+$strings["password"] = "Kata Sandi";
+$strings["new_password"] = "Kata sandi baru";
+$strings["confirm_password"] = "Konfirmasi Kata Sandi";
+$strings["home_phone"] = "Telepon rumah";
+$strings["mobile_phone"] = "Telepon Genggam";
+$strings["permissions"] = "Hak Akses";
+$strings["administrator_permissions"] = "Hak Akses Administrator";
+$strings["project_manager_permissions"] = "Hak Akses Manager Proyek";
+$strings["user_permissions"] = "Hak Akses Pengguna";
+$strings["account_created"] = "Account terbuat.";
+$strings["edit_user"] = "Ubah Pengguna";
+$strings["edit_user_details"] = "Ubah detil account pengguna.";
+$strings["change_user_password"] = "Ganti kata sandi pengguna.";
+$strings["select_permissions"] = "Pilih hak akses untuk pengguna ini";
+$strings["add_user"] = "Tambah Pengguna";
+$strings["enter_user_details"] = "Masukkan detil pengguna baru yang anda siapkan";
+$strings["enter_password"] = "Masukkan kata sandi pengguna";
+$strings["success_logout"] = "Anda telah keluar dari sistem.  Anda dapat masuk kembali dengan memasukkan nama pengguna dan kata sandi di bawah.";
+$strings["invalid_login"] = "Nama Pengguna dan/atau kata sandi salah. Harap ulangi.";
+$strings["profile"] = "Profil";
+$strings["user_details"] = "Detik account pengguna";
+$strings["edit_user_account"] = "Ubah informasi account anda.";
+$strings["no_permissions"] = "Anda tidak mempunyai akses ke fungsi tersebut.";
+$strings["discussion"] = "Diskusi";
+$strings["retired"] = "Non-aktif";
+$strings["last_post"] = "Pesan Terakhir";
+$strings["post_reply"] = "Pesan Balasan";
+$strings["posted_by"] = "Dipublikasi oleh";
+$strings["when"] = "ketika";
+$strings["post_to_discussion"] = "Pesan ke Diskusi";
+$strings["message"] = "Pesan";
+$strings["delete_reports"] = "Hapus Laporan";
+$strings["delete_projects"] = "Hapus Proyek";
+$strings["delete_organizations"] = "Hapus Organisasi Klien";
+$strings["delete_organizations_note"] = "Note: Menghapus klien ini akan secara otomatis menghapus semua pengguna klien organisasi ini, dan menghilangkan referensi dari semua proyek yang terbuka";
+$strings["delete_messages"] = "Hapus Pesan-pesan";
+$strings["attention"] = "Perhatian";
+$strings["delete_teamownermix"] = "Penghapusan sukses, tetapi pemilik proyek tidak dapat dihapus dari tim proyek.";
+$strings["delete_teamowner"] = "Anda tidak bisa menghapus pemilik proyek dari tim";
+$strings["enter_keywords"] = "Masukkan kata kunci untuk pencarian";
+$strings["search_options"] = "Kata Kunci dan Pilihan Pencarian";
+$strings["search_note"] = "Anda harus memberikan informasi di kotak Pencarian.";
+$strings["search_results"] = "Hasil Pencarian";
+$strings["users"] = "Pengguna";
+$strings["search_for"] = "Cari untuk";
+$strings["results_for_keywords"] = "Hasil Pencarian Kata Kunci";
+$strings["add_discussion"] = "Tambah Diskusi";
+$strings["delete_users"] = "Hapus Data Pengguna";
+$strings["reassignment_user"] = "Penyerahan Ulang Proyek dan Tugas";
+$strings["there"] = "Ada beberapa ";
+$strings["owned_by"] = "dimiliki oleh pengguna di atas.";
+$strings["reassign_to"] = "Sebelum menghapus pengguna, harap serah ulang tugas ini ke ";
+$strings["no_files"] = "Tidak ada file";
+$strings["published"] = "Publikasi";
+$strings["project_site"] = "Situs Proyek";
+$strings["add_project_site"] = "Tambah ke Situs Proyek";
+$strings["remove_project_site"] = "Hapus dari Situs Proyek";
+$strings["more_search"] = "Tambahan opsi pencarian";
+$strings["results_with"] = "Cari hasil dengan";
+$strings["search_topics"] = "Topik pencarian";
+$strings["search_properties"] = "Properti Percarian";
+$strings["date_restrictions"] = "Restriksi Tanggal";
+$strings["yes"] = "Ya";
+$strings["no"] = "Tidak";
+$strings["sort_by"] = "Sorting Berdasarkan";
+$strings["type"] = "Tipe";
+$strings["date"] = "Tanggal";
+$strings["all_words"] = "semua kata (AND)";
+$strings["any_words"] = "semua kata (OR)";
+$strings["exact_match"] = "Persamaan persis";
+$strings["all_dates"] = "Semua tanggal";
+$strings["between_dates"] = "Di antara tanggal";
+$strings["all_content"] = "Semua Isi";
+$strings["all_properties"] = "Semua properti";
+$strings["no_results_search"] = "Pencarian tidak memberikan hasil.";
+$strings["no_results_report"] = "Laporan tidak memberikan hasil.";
+$strings["hours"] = "jam";
+$strings["choice"] = "Pilihan";
+$strings["missing_file"] = "File hilang!";
+$strings["project_site_deleted"] = "Situs Proyes telah dihapus.";
+$strings["add_user_project_site"] = "Pengguna telah diberikan akses ke Situs Proyek.";
+$strings["remove_user_project_site"] = "Hak akses pengguna telah dihapus.";
+$strings["add_project_site_success"] = "Penambahan ke Situs Proyek berhasil.";
+$strings["remove_project_site_success"] = "Penghapusan dari Situs Proyek berhasil.";
+$strings["add_file_success"] = "1 item di-link.";
+$strings["delete_file_success"] = "Unlinking sukses.";
+$strings["update_comment_file"] = "Komentar file telah di-update.";
+$strings["session_false"] = "Kesalahan sesi";
+$strings["noti_foot1"] = "Pesan ini disiapkan oleh CollaBoard.";
+$strings["noti_foot2"] = "Untuk melihat website CollaBoard, kunjungi:";
+$strings["noti_taskassignment1"] = "Tugas baru:";
+$strings["noti_taskassignment2"] = "Sebuah tugas telah diserahkan kepada anda.";
+$strings["noti_prioritytaskchange1"] = "Perubahan prioritas tugas:";
+$strings["noti_prioritytaskchange2"] = "Prioritas dari tugas berikut telah berubah:";
+$strings["noti_statustaskchange1"] = "Perubahan status tugas:";
+$strings["noti_statustaskchange2"] = "Status dari tugas berikut telah berubah:";
+$strings["login_username"] = "Harap masukkan Nama Pengguna";
+$strings["login_password"] = "Harap masukkan Kata Sandi.";
+$strings["login_clientuser"] = "Ini adalah nama pengguna dari Klien.  Anda tidak dapat menggunakan CollaBoard dengan nama pengguna ini.";
+$strings["user_already_exists"] = "Sudah ada nama pengguna yang sama.  Harap gunakan variasi dari nama pengguna ini.";
+$strings["noti_duedatetaskchange1"] = "Tanggal deadline berubah:";
+$strings["noti_duedatetaskchange2"] = "Tanggal deadline dari tugas berikut berubah:";
+$strings["company"] = "Perusahaan";
+$strings["show_all"] = "Perlihatkan Semua";
+$strings["information"] = "Informasi";
+$strings["delete_message"] = "Hapus Pesan Ini";
+$strings["project_team"] = "Tim Proyek";
+$strings["document_list"] = "List Dokumen";
+$strings["bulletin_board"] = "Papan Bulletin";
+$strings["bulletin_board_topic"] = "Topik Papan Bulletin";
+$strings["create_topic"] = "Buat Topik Baru";
+$strings["topic_form"] = "Form Topik";
+$strings["enter_message"] = "Masukkan pesan anda";
+$strings["upload_file"] = "Upload sebuah File";
+$strings["upload_form"] = "Form Upload";
+$strings["document"] = "Dokumen";
+$strings["approval_comments"] = "Komentar Approval";
+$strings["client_tasks"] = "Tugas Klien";
+$strings["team_tasks"] = "Tugas Tim";
+$strings["team_member_details"] = "Detil Anggota Tim Proyek";
+$strings["client_task_details"] = "Detil Tugas Klien";
+$strings["team_task_details"] = "Detil Tugas Tim";
+$strings["language"] = "Bahasa";
+$strings["welcome"] = "Selamat Datang";
+$strings["your_projectsite"] = "Di Project Site";
+$strings["contact_projectsite"] = "JIka anda mempunyai pertanyaan mengenai extranet ini atau informasi yang ditemukan di sini, harap hubungi pemilik proyek";
+$strings["company_details"] = "Detil Perusahaan";
+$strings["company_info"] = "Ubah informasi perusahaan anda";
+$strings["create_projectsite"] = "Siapkan Situs Proyek";
+$strings["projectsite_url"] = "URL Situs Proyek";
+$strings["design_template"] = "Desain Template";
+$strings["preview_design_template"] = "Preview Desain Template";
+$strings["delete_projectsite"] = "Hapus Situs Proyek";
+$strings["add_file"] = "Tambah File";
+$strings["edit_file"] = "Ubah detil file";
+$strings["permitted_client"] = "Pengguna Klien dengan akses";
+$strings["grant_client"] = "Berikan akses untuk melihat Situs Proyek";
+$strings["add_client_user"] = "Tambah Pengguna Klien";
+$strings["edit_client_user"] = "Ubah Pengguna Klien";
+$strings["client_user"] = "Pengguna dari Klien";
+$strings["client_change_status"] = "Ubah status anda di-bawah setelah anda menyelesaikan tugas ini";
+$strings["project_status"] = "Status Proyek";
+$strings["view_projectsite"] = "Lihat Situs Proyek";
+$strings["enter_login"] = "Masukkan nama pengguna anda untuk menerima password baru";
+$strings["send"] = "Kirim";
+$strings["no_login"] = "Login tidak ditemukan dalam database";
+$strings["email_pwd"] = "Password telah dikirim";
+$strings["no_email"] = "Pengguna tidak mempunyai email";
+$strings["forgot_pwd"] = "Lupa Password?";
+$strings["connected"] = "Terkoneksi";
+$strings["session"] = "Sesi";
+$strings["last_visit"] = "Kunjungan Terakhir";
+$strings["task_owner"] = "Anda bukan anggota dari tim proyek ini";
+$strings["reassignment_clientuser"] = "Penyerahan Ulang Tugas";
+$strings["organization_already_exists"] = "Nama tersebut telah digunakan. Harap pilih yang lain";
+$strings["blank_organization_field"] = "Anda harus memasukan detil dari organisasi klien anda.";
+$strings["blank_fields"] = "Field harus di-isi";
+$strings["projectsite_login_fails"] = "Tidak dapat mengkonfirmasi kombinasi nama pengguna dan kata sandi.";
+$strings["start_date"] = "Tanggal Mulai";
+$strings["completion"] = "%";
+$strings["setup_erase"] = "Erase the file setup.php!!";
+$strings["exceed_size"] = "Melebihi batas maximum besarnya file";
+$strings["approval_date"] = "Tanggal ACC";
+$strings["approver"] = "Pemberi ACC";
+$strings["error_database"] = "Tidak terkoneksi dengan database";
+$strings["error_server"] = "Tidak terkoneksi dengan server";
+$strings["version_control"] = "Kontrol Versi";
+$strings["vc_last_in"] = "Tanggal modifikasi terakhir";
+$strings["ifa_comments"] = "Komentar ACC";
+$strings["ifa_command"] = "Ubah status ACC";
+$strings["vc_version"] = "Versi";
+$strings["ifc_revisions"] = "Revisi Kolega";
+$strings["ifc_revision_of"] = "Revisi dari versi";
+$strings["ifc_add_revision"] = "Tambah revisi kolega";
+$strings["ifc_last_date"] = "Tanggal modifikasi terakhir";
+$strings["ifc_version_history"] = "Sejarah Versi";
+$strings["ifc_delete_file"] = "Hapus file dan semua revisi";
+$strings["ifc_delete_version"] = "Hapus versi yang dipilih";
+$strings["ifc_delete_review"] = "Hapus revisi yang dipilih";
+$strings["ifc_no_revisions"] = "Tidak ada revisi untuk dokumen ini";
+$strings["remove_team"] = "Hapus Anggota Tim";
+$strings["remove_team_info"] = "Hapus nama pengguna ini dari Tim Proyek?";
+$strings["remove_team_client"] = "Hapus akses untuk melihat Situs Proyek";
+$strings["subject"] = "Subyek";
+$strings["delete_note"] = "Hapus Notes";
+$strings["add_note"] = "Tambah Note";
+$strings["edit_note"] = "Ubah  Note";
+$strings["version_increm"] = "Pilih jenis perubahan versi yang digunakan:";
+$strings["note_owner"] = "Anda hanya dapat melakukan perubahan notes kepunyaan anda sendiri";
+$strings["alpha_only"] = "Alphanumerik saja pada saat Login";
+$strings["edit_notifications"] = "Ubah Pemberitahuan Lewat E-mail";
+$strings["edit_notifications_info"] = "Pilih even yang anda inginkan saat penerimaan notifikasi.";
+$strings["select_deselect"] = "Pilih/Tidak Memilih Semua";
+$strings["noti_addprojectteam1"] = "Ditambahkan ke Tim Proyek :";
+$strings["noti_addprojectteam2"] = "Anda telah ditambahkan ke tim untuk proyek : ";
+$strings["noti_removeprojectteam1"] = "Dipindahkan dari tim proyek : ";
+$strings["noti_removeprojectteam2"] = "Anda telah dipindahkan dari tim proyek untuk : ";
+$strings["noti_newpost1"] = "Pesan baru:";
+$strings["noti_newpost2"] = "Pesan baru telah ditambahkan ke diskusi berikut: ";
+$strings["edit_noti_taskassignment"] = "Saya diserahkan tugas baru.";
+$strings["edit_noti_statustaskchange"] = "Status dari salah satu tugas sayang berubah.";
+$strings["edit_noti_prioritytaskchange"] = "Prioritas dari salah satu tugas saya berubah.";
+$strings["edit_noti_duedatetaskchange"] = "Deadline dari salah satu tugas saya berubah.";
+$strings["edit_noti_addprojectteam"] = "Anda telah ditambahkan ke dalam tim untuk proyek";
+$strings["edit_noti_removeprojectteam"] = "Anda telah dipindahkan dari tim proyek";
+$strings["edit_noti_newpost"] = "Ada pesan baru untuk didiskusikan.";
+$strings["add_optional"] = "Tambah (optional) ";
+$strings["assignment_comment_info"] = "Tambah komentar mengenai tugas ini";
+

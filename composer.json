@@ -1,0 +1,89 @@
+{
+  "name": "phpcollab/phpcollab",
+  "homepage": "https://phpcollab.com",
+  "description": "Project management and collaboration over the internet. Features team/client sites, task assignment, document repository/workflow, gantt charts, discussions, calendar, notifications, support requests, weblog news desk, invoicing, and many other tools.",
+  "authors": [
+    {
+      "name": "Jeff Sittler",
+      "email": "jsittler@mindblender.com",
+      "homepage": "https://jeffsittler.com"
+    }
+  ],
+  "license": "GPL-2.0-only",
+  "config": {
+    "sort-packages": true
+  },
+  "require": {
+    "php": ">=7.4",
+    "ext-openssl": "*",
+    "ext-pdo": "*",
+    "amenadiel/jpgraph": "^4.1",
+    "apfelbox/php-file-download": "^2.1",
+    "guzzlehttp/guzzle": "^7.5.1",
+    "ifsnop/mysqldump-php": "^2.3",
+    "laminas/laminas-escaper": "^2.8",
+    "maximebf/debugbar": "^1.0",
+    "monolog/monolog": "^2.3",
+    "phpmailer/phpmailer": "^6.5",
+    "ramsey/uuid": "^4.1",
+    "rospdf/pdf-php": "^0.12",
+    "sabre/vobject": "^4.3",
+    "symfony/filesystem": "^5.3",
+    "symfony/http-foundation": "^5.3",
+    "symfony/mime": "^5.3",
+    "symfony/security-csrf": "^5.3"
+  },
+  "require-dev": {
+    "ext-ftp": "*",
+    "ext-ldap": "*",
+    "ext-mysqli": "*",
+    "ext-pgsql": "*",
+    "codeception/codeception": "^4.1",
+    "codeception/module-asserts": "^1.3",
+    "codeception/module-phpbrowser": "^1.0",
+    "php-webdriver/webdriver": "^1.8"
+  },
+  "autoload": {
+    "psr-0": {
+    },
+    "psr-4": {
+      "phpCollab\\": "classes/"
+    }
+  },
+  "scripts": {
+    "test:dev": [
+      "./vendor/bin/codecept run acceptance --skip-group=install"
+    ],
+    "test:setup": [
+      "./vendor/bin/codecept run tests/acceptance/Installation/SetupCest.php"
+    ],
+    "test:public": [
+      "./vendor/bin/codecept run tests/acceptance/public/PublicCest.php",
+      "./vendor/bin/codecept run tests/acceptance/public/WelcomeCept.php",
+      "./vendor/bin/codecept run tests/acceptance/public/ViewLicenseCept.php",
+      "./vendor/bin/codecept run tests/acceptance/public/SeeTheForgotPasswordCept.php",
+      "./vendor/bin/codecept run tests/acceptance/public/ForgotPasswordCept.php",
+      "./vendor/bin/codecept run tests/acceptance/public/ForgotPasswordTooManyRequestsCept.php",
+      "./vendor/bin/codecept run tests/acceptance/public/LoginFailCept.php"
+    ],
+    "test:loggedIn": [
+      "php vendor/bin/codecept run tests/acceptance/loggedIn/AdministrationCest.php",
+      "php vendor/bin/codecept run tests/acceptance/loggedIn/BookmarksCest.php",
+      "php vendor/bin/codecept run tests/acceptance/loggedIn/CalendarCest.php",
+      "php vendor/bin/codecept run tests/acceptance/loggedIn/NewsdeskCest.php",
+      "php vendor/bin/codecept run tests/acceptance/loggedIn/ClientsCest.php",
+      "php vendor/bin/codecept run tests/acceptance/loggedIn/ProjectsCest.php",
+      "php vendor/bin/codecept run tests/acceptance/loggedIn/TasksCest.php",
+      "php vendor/bin/codecept run tests/acceptance/loggedIn/UserCest.php",
+      "php vendor/bin/codecept run tests/acceptance/loggedIn/SearchCest.php",
+      "php vendor/bin/codecept run tests/acceptance/loggedIn/ReportsCest.php",
+      "php vendor/bin/codecept run tests/acceptance/public/LoginSuccessCept.php"
+    ]
+  },
+  "scripts-descriptions": {
+    "test:dev": "Run all tests except installation tests",
+    "test:setup": "Run setup/installation tests",
+    "test:public": "Run all 'public' tests",
+    "test:loggedIn": "Run all tests that require a user to be logged in"
+  }
+}
